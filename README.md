@@ -39,9 +39,9 @@
 <img width="747" alt="Screenshot 2023-05-24 at 6 39 32 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/ec75897d-7c20-42e5-b3be-d262d1586590">
 
 ## Step 2: Create a Logistic Regression Model
-
-
-
+- Fit a logistic regression model using the training data. 
+- Saved the predictions on the testing data labels by using the testing feature dataset and the fitted model. 
+- Evaluated the model's performance by generating a confusion matrix and generating a classification report. ***
 
 ## Step 3: Write a Credit Risk Analysis Report
 ## Overview of the Analysis
