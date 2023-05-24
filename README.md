@@ -30,9 +30,11 @@
 ## Step 1: Split the Data into Training and Testing Sets
 - Read the lending_data.csv into a Pandas DataFrame.
 <img width="733" alt="Screenshot 2023-05-24 at 6 37 12 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/2090d35a-807a-4238-a516-ef370d12cc43">
+
 - Created the labels set "y" from the loan_status column and created the features "X" DataFrame from the remaining columns. 
 <img width="736" alt="Screenshot 2023-05-24 at 6 38 18 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/fe233cb0-4ef7-49e8-bd2d-5c6fbd029901">
 <img width="743" alt="Screenshot 2023-05-24 at 6 38 41 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/35d6dd05-0380-4385-b7e0-8578b143d39c">
+
 - Split the data into training and testing datasets using train_test_split.
 <img width="747" alt="Screenshot 2023-05-24 at 6 39 32 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/ec75897d-7c20-42e5-b3be-d262d1586590">
 
