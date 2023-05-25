@@ -40,31 +40,29 @@
 
 ## Step 2: Create a Logistic Regression Model
 - Fit a logistic regression model using the training data. 
+<img width="731" alt="Screenshot 2023-05-24 at 7 40 47 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/c10d11ba-7025-4a3a-badf-489793e45f97">
+
 - Saved the predictions on the testing data labels by using the testing feature dataset and the fitted model. 
+<img width="736" alt="Screenshot 2023-05-24 at 7 41 07 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/698848c6-dbb5-48ae-9ab6-9410ee851c90">
+
 - Evaluated the model's performance by generating a confusion matrix and generating a classification report. ***
+<img width="739" alt="Screenshot 2023-05-24 at 7 41 24 PM" src="https://github.com/brittanynicole7/credit-risk-classification/assets/119909433/134c4b81-fa00-4ba7-a35b-1d9de8e7fa6f">
+
 
 ## Step 3: Write a Credit Risk Analysis Report
+
 ## Overview of the Analysis
-
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+ The purpose of this analysis was to create machine learning models to predict healthy and high risk loans. Independent variables in the dataset included loan size, interest rate, borrower income, debt to income ratio, number of accounts, derogatory marks, total debt and the dependent variable in the model was loan status (i.e., healthy versus high risk loans via value_counts). For this analysis, I used a logistic regression initially and the accuracy was really high (95.2%) but there were too many false positives and negatives using this model and the recall, precision, and f1-scores for predicting high-risk loans were not high enough. Given these considerations, I used the RandomOverSampler module and the acccuracy, number of false positives/negatives, and precision, recall, and f1-scores all improved. 
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
-
+  * For model 1, using just a logistic regression, the accuracy score was high at 95.2%, there were high precision (healthy loan- 1.00, high-risk loan-0.85), recall (healthy loan- 0.99, high-risk loan- 0.91), and f1-scores (healthy loan-1.00, high-risk loan-0.88).
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * For model 1, using random oversampler and a logistic regression, the accuracy score was even higher at 99.4%, there were higher precision (healthy loan- 1.00, high-risk loan-0.99), higher recall (healthy loan- 0.99, high-risk loan- 0.99), and higher f1-scores (healthy loan-1.00, high-risk loan-0.91).
 
 ## Summary
 
