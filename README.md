@@ -62,16 +62,10 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
   * For model 1, using just a logistic regression, the accuracy score was high at 95.2%, there were high precision (healthy loan- 1.00, high-risk loan-0.85), recall (healthy loan- 0.99, high-risk loan- 0.91), and f1-scores (healthy loan-1.00, high-risk loan-0.88).
 
 * Machine Learning Model 2:
-  * For model 1, using random oversampler and a logistic regression, the accuracy score was even higher at 99.4%, there were higher precision (healthy loan- 1.00, high-risk loan-0.99), higher recall (healthy loan- 0.99, high-risk loan- 0.99), and higher f1-scores (healthy loan-1.00, high-risk loan-0.91).
+  * For model 2, using random oversampler and a logistic regression, the accuracy score was even higher at 99.4%, there were higher precision (healthy loan- 1.00, high-risk loan-0.99), higher recall (healthy loan- 0.99, high-risk loan- 0.99), and higher f1-scores (healthy loan-1.00, high-risk loan-0.91).
 
 ## Summary
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
-
+ The model that seems to perform best is the model that used random oversampling because the accuracy, recall, and precision scores were all higher and the number of false positives/negatives decreased. In the case of this dataset, it is more important to accurately predict high-risk loans and to refrain from giving loans to individuals that are at high risk of defaulting on the loan so in this case, the second model is more efficient as the precision, recall, and accuracy scores all improve. 
 
 # Author 
 -Brittany Wright github:brittanynicole7
