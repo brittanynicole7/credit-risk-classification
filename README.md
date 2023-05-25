@@ -52,20 +52,20 @@
 ## Step 3: Write a Credit Risk Analysis Report
 
 ## Overview of the Analysis
- The purpose of this analysis was to create machine learning models to predict healthy and high risk loans. Independent variables in the dataset included loan size, interest rate, borrower income, debt to income ratio, number of accounts, derogatory marks, total debt and the dependent variable in the model was loan status (i.e., healthy versus high risk loans via value_counts). For this analysis, I used a logistic regression initially and the accuracy was really high (95.2%) but there were too many false positives and negatives using this model and the recall, precision, and f1-scores for predicting high-risk loans were not high enough. Given these considerations, I used the RandomOverSampler module and the acccuracy, number of false positives/negatives, and precision, recall, and f1-scores all improved. 
+The purpose of this analysis was to create machine learning models to predict healthy and high risk loans. Independent variables in the dataset included loan size, interest rate, borrower income, debt to income ratio, number of accounts, derogatory marks, total debt and the dependent variable in the model was loan status (i.e., healthy versus high risk loans via value_counts). For this analysis, I used a logistic regression initially and the accuracy was really high (95.2%) but there were too many false positives and negatives using this model and the recall and for predicting high-risk loans had room for improvement. Given these considerations, I used the RandomOverSampler module and the acccuracy and recall improved and precision was slightly lower (0.01 point). 
 
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * For model 1, using just a logistic regression, the accuracy score was high at 95.2%, there were high precision (healthy loan- 1.00, high-risk loan-0.85), recall (healthy loan- 0.99, high-risk loan- 0.91), and f1-scores (healthy loan-1.00, high-risk loan-0.88).
+  * For model 1, using just a logistic regression, the accuracy score was high at 95.2%, and there was high precision (healthy loan- 1.00, high-risk loan-0.85) and recall (healthy loan- 0.99, high-risk loan- 0.91). However, this model was not as good at preciting the high-risk compared to the healthy loans. 
 
 * Machine Learning Model 2:
-  * For model 2, using random oversampler and a logistic regression, the accuracy score was even higher at 99.4%, there were higher precision (healthy loan- 1.00, high-risk loan-0.84), higher recall (healthy loan- 0.99, high-risk loan- 0.99), and higher f1-scores (healthy loan-1.00, high-risk loan-0.91).
+  * For model 2, using random oversampler and a logistic regression, the accuracy score was even higher at 99.4%, there was a slightly lower precision score (healthy loan- 1.00, high-risk loan-0.84),  and higher recall (healthy loan- 0.99, high-risk loan- 0.99). This model compared to the first more effectively limited false negatives with the higher recall score and the precision score was still comparable. The accuracy score was also higher for the second model compared to the first. 
 
 ## Summary
- The model that seems to perform best is the model that used random oversampling because the accuracy, recall, and precision scores were all higher and the number of false positives/negatives decreased. In the case of this dataset, it is more important to accurately predict high-risk loans and to refrain from giving loans to individuals that are at high risk of defaulting on the loan so in this case, the second model is more efficient as the precision, recall, and accuracy scores all improve. 
+The model that seems to perform best is the model that used random oversampling because the accuracy and recall scores were all higher and the number of false negatives decreased. In the case of this dataset, it is more important to accurately predict high-risk loans and to refrain from giving loans to individuals that are at high risk of defaulting on the loan so in this case, the second model is more efficient as the recall was higher (i.e. less false negatives). Although false positives are also not ideal (i.e., people who were predicted to have a high risk loan when they in fact would have a healthy loan), it is more important to not give people loans they will default on. 
 
 # Author 
 -Brittany Wright github:brittanynicole7
